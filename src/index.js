@@ -16,7 +16,7 @@ module.exports = function getZerosCount(number, base) {
                 r = 0;
             }
         }
-        ArrayForBaseFactors.set(tempBase, 1);
+        if(tempBase!==1) ArrayForBaseFactors.set(tempBase, 1);
         /*if(ArrayForBaseFactors.size===0){
             ArrayForBaseFactors.set(base, 1)
         }*/
